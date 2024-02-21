@@ -1,5 +1,4 @@
 package Bread;
-
 public class Bread {
     private double flour;
     private double water;
@@ -110,14 +109,13 @@ public class Bread {
         this.recipe = recipe;
     }
 
-
+    // Method to bake the bread
     public void bake() {
-
-            state = "baked";
-
+        state = "baked";
     }
-    // Ingredients constructor
-    public String getIngredients(){
+
+    // Method to get the ingredients
+    public String getIngredients() {
         return "Ingredients of " + breadName + " are:\n" +
                 flour + " cups of flour\n" +
                 water + " cups of water\n" +
@@ -126,12 +124,13 @@ public class Bread {
                 bakingPowder + " tsps of baking powder\n" +
                 yeast + " tsps of yeast\n";
     }
+
     // String method to show type of bread
     @Override
     public String toString() {
-        return "Bread \nflour" + flour + "\nwater" + water + "\nsalt" + salt +
-                "\nsugar" + sugar + "\nbakingPowder" + bakingPowder +
-                "\nyeast" + yeast + "\nbreadName" + breadName +
-                "\nstate" + state + "\nrecipe=" + recipe;
+        return "Bread \nflour: " + flour + "\nwater: " + water + "\nsalt: " + salt +
+                "\nsugar: " + sugar + "\nbakingPowder: " + bakingPowder +
+                "\nyeast: " + yeast + "\nbreadName: " + breadName +
+                "\nstate: " + state + "\nrecipe: " + recipe;
     }
 }

@@ -25,9 +25,9 @@ public class Bagels extends Bread {
     }
 
     // Method to describe recipe
-    public void describeRecipe() {
-        System.out.println("A recipe of " + getBreadName() + ":\n" +
-                getRecipe());
+    public String describeRecipe() {
+        return "A recipe of " + getBreadName() + ":\n" +
+                getRecipe();
     }
 
     // Override toString method

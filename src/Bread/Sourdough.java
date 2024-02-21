@@ -1,12 +1,13 @@
 package Bread;
 
 public class Sourdough extends Bread{
+    // variable using double
     private double sourdoughStarter;
 
     // Default constructor
     public Sourdough() {
         super();
-        this.sourdoughStarter = 1.00;  // Default amount of sourdough starter
+        this.sourdoughStarter = 1.00;
     }
 
     // Constructor with all parameters
@@ -24,6 +25,7 @@ public class Sourdough extends Bread{
         this.sourdoughStarter = sourdoughStarter;
     }
 
+    // Describes the Recipe using a return String
     public String describeRecipe() {
         return "A recipe of Sourdough Bread:\n" +
                 "1. Mix flour, water, salt, sugar, yeast, and ripe sourdough starter.\n" +
